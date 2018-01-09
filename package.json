@@ -1,0 +1,19 @@
+{
+  "name": "etstyle",
+  "version": "1.0.0",
+  "description": "Barebone CSS framework for E&T-dagen",
+  "main": "dist/test/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "etdagen"
+  ],
+  "author": "Trysnetron",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

@@ -1,0 +1,59 @@
+// Variables
+/*
+    Most modifications to design should be done in this file.
+*/
+
+// BASE VARIABLES
+
+//// Colors
+$color-primary: #A03836;
+$color-secondary: #2D2E2C;
+$color-background: #FFF;
+
+$color-primary-light: lighten($color-primary, 25);
+$color-primary-dark: darken($color-primary, 25);
+
+//// Sizes
+$size-1: 8px;
+$size-2: 16px;
+$size-4: 32px;
+$size-8: 64px;
+$size-16: 128px; 
+
+//// Typography
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+$font-family: 'Montserrat', sans-serif;
+$font-weight-default: 400;
+$font-weight-heavy: 600;
+
+//// Breakpoints
+$breakpoint-tablet: 500px;
+$breakpoint-desktop: 800px;
+
+// SPECIFIC VARIABLES
+
+//// Layout
+$content-spacing-outer: $size-8;
+$content-spacing-inner: $size-2;
+
+$wrapper-width-max: 1024px;
+
+//// Background
+$background-gradient: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+
+//// Body type
+$bodytype-color: $color-secondary;
+$bodytype-size: $size-2;
+$bodytype-weight: $font-weight-default;
+
+
+// Titles
+$title-l-size: $size-8;
+$title-l-weight: $font-weight-heavy;
+
+$title-m-size: $size-4;
+$title-m-weight: $font-weight-heavy;
+
+$title-s-size: $size-2;
+$title-s-weight: $font-weight-heavy;
+

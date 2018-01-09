@@ -1,0 +1,19 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+
+    font-family: $font-family;
+    font-size: $bodytype-size;
+    font-weight: $bodytype-weight;
+    color: $bodytype-color;
+
+    background-color: $color-background;
+}
+

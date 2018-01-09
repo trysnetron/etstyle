@@ -1,0 +1,13 @@
+// DEVICES
+
+@mixin tablet-and-up  {
+    @media only screen and (min-width: $breakpoint-tablet) { 
+      @content; 
+    }
+  }
+  
+  @mixin desktop-and-up {
+    @media only screen and (min-width: $breakpoint-desktop) { 
+      @content; 
+    }
+  }
