@@ -7,6 +7,6 @@ gulp.task('build', function() {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', ['build'], function() {
     gulp.watch('src/*.scss', ['build']);
 });

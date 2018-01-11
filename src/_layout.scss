@@ -1,9 +1,7 @@
 .et-content {
     width: 100%;
-    margin: 0 auto $content-spacing-outer;
-    &:last-child {
-        margin: 0 auto;
-    }
+    margin: 0 auto;
+    padding: $content-spacing-outer 0;
 
     &.banner {
         background-size: cover;
@@ -17,6 +15,7 @@
         margin: 0 auto $content-spacing-inner;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         &:last-child {
             margin: 0 auto;
         }
@@ -27,41 +26,92 @@
         .et-column {
             flex-basis: 0;
             flex-grow: 1;
-            margin: 0 $content-spacing-inner $content-spacing-inner;
+            width: 100%;
+            margin: 0 0 $content-spacing-inner;
             &:last-child {
-                margin: 0 $content-spacing-inner;
+                margin: 0;
+            }
+            @include tablet-and-up {
+                margin: 0 $content-spacing-inner 0 0;
             }
 
-            img {
-                width: 75%;
-                margin: 0 auto;
+        }
+
+        &.cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            .et-card {
+                width: $card-width-default;
+                text-align: center;
+                border: 1px solid blue;
+                margin: 0 $content-spacing-inner/2 $content-spacing-inner;
+                &.small {
+                    width: $card-width-small;
+                }
+                &.large {
+                    width: $card-width-large;
+                }
+            }
+        }
+
+        &.list {
+            flex-direction: row;
+            .et-field {
+                flex-basis: 0;
+                flex-grow: 1;
+                overflow: hidden;
+                width: 100%;
+                margin: 0 0 0 $content-spacing-inner;
+                &:last-child {
+                    margin: 0 $content-spacing-inner;
+                }    
             }
         }
     }
 
-    .et-center {
+    .et-image {
         width: 100%;
-        max-width: $wrapper-width-max;
-        text-align: center;
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;        
-        align-items: center;
-        
-        margin: 0 auto $content-spacing-inner;
-        &:last-child {
-            margin: 0 auto;
+        height: $image-height-default;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        &.small {
+            height: $image-height-small;
+        }
+        &.large {
+            height: $image-height-large;
+        }
+        &.cover {
+            background-size: cover;
         }
     }
 } 
 
-.fill-screen {
-    min-height: 100vh;
-}
-
 .center-text {
     text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.et-header {
+    @extend .et-content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.et-footer {
+    @extend .et-content;
+    padding-top: 0;
+    .et-row:first-child {
+        padding-top: $content-spacing-outer;
+        border-top: 1px solid $color-secondary;
+    }
 }
 
 /*

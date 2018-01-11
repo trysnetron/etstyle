@@ -1,19 +1,19 @@
 .et-title {
     display: block;
-    margin-bottom: $size-2;
+    font-size: $title-m-size;
+    font-weight: $title-m-weight;
 
     &.small {
         font-size: $title-s-size;
         font-weight: $title-s-weight;
     }
 
-    &.medium {
-        font-size: $title-m-size;
-        font-weight: $title-m-weight;
-    }
-
     &.large {
         font-size: $title-l-size;
         font-weight: $title-l-weight;
+    }
+
+    &.weak {
+        font-weight: $font-weight-default;
     }
 }
