@@ -2,8 +2,10 @@
   "name": "etstyle",
   "version": "1.0.0",
   "description": "Barebone CSS framework for E&T-dagen",
-  "main": "dist/test/index.html",
+  "main": "dist/etstyle.css",
   "scripts": {
+    "dev": "parcel demo/index.html",
+    "prod": "parcel build src/etstyle.scss --no-source-maps",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +23,8 @@
   },
   "homepage": "https://github.com/trysnetron/etsyle#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "sass": "^1.20.3"
   }
 }
