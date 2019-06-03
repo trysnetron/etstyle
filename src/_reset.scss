@@ -9,6 +9,7 @@
 body {
     width: 100vw;
     min-height: 100vh;
+    min-width: 320px;
 
     font-family: $font-family;
     font-size: $bodytype-size;
